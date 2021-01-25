@@ -66,13 +66,6 @@ public class ViewModule extends Demo1{
 		System.out.println(subModules.size());
 	}
 	
-//	@Test()
-//	public void ScrollToEnd() throws InterruptedException{
-//		view.views().click();
-//		Thread.sleep(2000);
-//		driver.findElementByAndroidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"WebView3\"));");
-//	}
-	
 	
 	
 	@AfterTest

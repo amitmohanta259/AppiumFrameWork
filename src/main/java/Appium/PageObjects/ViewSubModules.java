@@ -1,14 +1,15 @@
 package Appium.PageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
-public class viewSubModules {
+public class ViewSubModules {
 	
-	public viewSubModules(AndroidDriver<AndroidElement> driver){
+	public ViewSubModules(AndroidDriver<AndroidElement> driver){
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -131,6 +132,8 @@ public class viewSubModules {
 	
 	@AndroidFindBy(xpath="//*[@text='Date Widgets']")
 	AndroidElement date;
+	
+	//public By webView3 = By.xpath("//android.widget.TextView[@id='android:id/text1']");
 	
 	public AndroidElement dateWidget(){
 		return date;
