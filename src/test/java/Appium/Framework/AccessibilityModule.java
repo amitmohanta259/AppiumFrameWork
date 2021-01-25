@@ -38,7 +38,7 @@ public class AccessibilityModule extends Demo1{
 			driver.pressKey(new KeyEvent(AndroidKey.BACK));
 			Thread.sleep(1000);
 		}	
-		
+		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 	}
 	
 	@AfterTest
