@@ -1,93 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="212280" started-at="2021-01-24T22:29:59Z" finished-at="2021-01-24T22:33:31Z">
+  <suite name="Default suite" duration-ms="96992" started-at="2021-01-26T02:35:27Z" finished-at="2021-01-26T02:37:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="212280" started-at="2021-01-24T22:29:59Z" finished-at="2021-01-24T22:33:31Z">
-      <class name="Appium.Framework.ViewModule">
-        <test-method status="PASS" signature="startServer()[pri:0, instance:Appium.Framework.ViewModule@a67c67e]" name="startServer" is-config="true" duration-ms="32473" started-at="2021-01-24T14:29:59Z" finished-at="2021-01-24T14:30:31Z">
+    <test name="Default test" duration-ms="96992" started-at="2021-01-26T02:35:27Z" finished-at="2021-01-26T02:37:04Z">
+      <class name="Appium.Framework.TestCalander">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:Appium.Framework.TestCalander@a67c67e]" name="initialize" is-config="true" duration-ms="28741" started-at="2021-01-25T18:35:27Z" finished-at="2021-01-25T18:35:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startServer -->
-        <test-method status="PASS" signature="countSubModules()[pri:0, instance:Appium.Framework.ViewModule@a67c67e]" name="countSubModules" duration-ms="139193" started-at="2021-01-24T14:30:31Z" finished-at="2021-01-24T14:32:50Z">
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="navigateToDateWidget()[pri:1, instance:Appium.Framework.TestCalander@a67c67e]" name="navigateToDateWidget" duration-ms="4998" started-at="2021-01-25T18:35:56Z" finished-at="2021-01-25T18:36:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- countSubModules -->
-        <test-method status="FAIL" signature="ScrollToEnd()[pri:0, instance:Appium.Framework.ViewModule@a67c67e]" name="ScrollToEnd" duration-ms="40455" started-at="2021-01-24T14:32:50Z" depends-on-methods="Appium.Framework.ViewModule.countSubModules" finished-at="2021-01-24T14:33:31Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Views']})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //android.widget.TextView[@text='Views']})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.click(<generated>)
-	at Appium.Framework.ViewModule.ScrollToEnd(ViewModule.java:71)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
-	at org.testng.TestNG.runSuites(TestNG.java:1144)
-	at org.testng.TestNG.run(TestNG.java:1115)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@6d23017e (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 28 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //android.widget.TextView[@text='Views']})
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-CQNAHNN', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        </test-method> <!-- navigateToDateWidget -->
+        <test-method status="PASS" signature="DatePicker1()[pri:2, instance:Appium.Framework.TestCalander@a67c67e]" name="DatePicker1" duration-ms="3307" started-at="2021-01-25T18:36:01Z" depends-on-methods="Appium.Framework.TestCalander.navigateToDateWidget" finished-at="2021-01-25T18:36:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ScrollToEnd -->
-        <test-method status="PASS" signature="stoppServer()[pri:0, instance:Appium.Framework.ViewModule@a67c67e]" name="stoppServer" is-config="true" duration-ms="53" started-at="2021-01-24T14:33:31Z" finished-at="2021-01-24T14:33:31Z">
+        </test-method> <!-- DatePicker1 -->
+        <test-method status="PASS" signature="testChangeDate()[pri:3, instance:Appium.Framework.TestCalander@a67c67e]" name="testChangeDate" duration-ms="59823" started-at="2021-01-25T18:36:05Z" depends-on-methods="Appium.Framework.TestCalander.DatePicker1" finished-at="2021-01-25T18:37:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- stoppServer -->
-      </class> <!-- Appium.Framework.ViewModule -->
+        </test-method> <!-- testChangeDate -->
+        <test-method status="PASS" signature="stopServer()[pri:0, instance:Appium.Framework.TestCalander@a67c67e]" name="stopServer" is-config="true" duration-ms="1" started-at="2021-01-25T18:37:04Z" finished-at="2021-01-25T18:37:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopServer -->
+      </class> <!-- Appium.Framework.TestCalander -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
